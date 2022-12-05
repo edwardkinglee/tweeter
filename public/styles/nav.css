@@ -8,7 +8,7 @@ nav {
   padding: 1.5em;
 }
 
-#navlogo{
+.navlogo{
   font-family: Bungee, sans-serif;
 }
 
@@ -16,9 +16,8 @@ nav {
   color:red;
 }
 
-#newtweet{
+.newtweet{
   display:flex;
   flex-direction: column;
   align-items: center;
-  padding: 0;
 }
