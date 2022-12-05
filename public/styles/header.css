@@ -1,0 +1,17 @@
+header {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 240px;
+  background-color:rgb(241, 207, 72);
+  background-image: url("../images/asfalt-dark.png");
+}
+
+header div{
+  background-color:rgb(241, 207, 72);
+  color: white;
+  background-image: url("../images/asfalt-dark.png");
+}
