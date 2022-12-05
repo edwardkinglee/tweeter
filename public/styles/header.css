@@ -5,9 +5,9 @@ header {
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding-top: 240px;
   background-color:rgb(241, 207, 72);
   background-image: url("../images/asfalt-dark.png");
+  margin-top: 80px;
 }
 
 header div{
@@ -15,3 +15,9 @@ header div{
   color: white;
   background-image: url("../images/asfalt-dark.png");
 }
+
+header h2 {
+  margin: 0;
+}
+
+
