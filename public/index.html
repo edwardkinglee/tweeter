@@ -50,7 +50,7 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <section class="new-tweet">
+      <section class="new-tweet-section">
         <h2>Compose Tweet</h2>
         <form method="POST" action="/tweets">
           <div>
@@ -69,6 +69,29 @@
           </footer>
         </form>
       </section>
+      <article class="tweet">
+        <div class="profile-pic">
+          <div>
+            <img src="./images/Bill_Gates.jpg" alt="Bill Gates face picture">
+          </div>
+          <div class="profile-name">
+            <label for="name"><strong>Bill Gates</strong></label>
+          </div> 
+        </div>
+            <p class="tweet-text">We all need people who will give us feedback. That’s how we improve.</p>
+          <footer>
+            <div class="days">
+              <p>10 days ago</p>
+            </div>
+            <div>
+              <form method="POST" action="/tweets">
+                <i class="fa-solid fa-flag"></i>
+                <i class="fa-sharp fa-solid fa-retweet"></i>
+                <i class="fa-solid fa-heart"></i>
+              </form>
+            </div>
+          </footer>
+      </article>
     </main>
   </body>
 </html>

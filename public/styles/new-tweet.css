@@ -23,9 +23,37 @@ textarea{
   width: 100%;
   resize: none;
   overflow: auto;
-
 }
 
 textarea:focus{
   outline: none;
+}
+
+article img{
+  width: 5em;
+}
+
+.new-tweet-section{
+  margin-bottom: 50px;
+}
+
+.tweet-text{
+  border-bottom: 2px solid #000000;
+}
+
+.profile-pic{
+  display:flex;
+  align-items: center;;
+}
+
+.profile-name{
+  margin-left: 10px;
+}
+
+.tweet-text{
+  padding-bottom: 40px;
+}
+
+footer .fa-solid:hover{
+  color:#4056A1;
 }
