@@ -1,5 +1,4 @@
 /* eslint-disable no-undef */
-
 $(document).ready(function() {
   const data = [
     {
