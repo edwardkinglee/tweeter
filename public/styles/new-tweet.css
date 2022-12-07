@@ -57,3 +57,8 @@ article img{
 footer .fa-solid:hover{
   color:#4056A1;
 }
+
+.tweet-header{
+  display: flex;
+  justify-content: space-between;
+}
