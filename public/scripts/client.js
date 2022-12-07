@@ -28,9 +28,6 @@ $(document).ready(function() {
   ];
 
   const renderTweets = function(tweets) {
-    // loops through tweets
-    // calls createTweetElement for each tweet
-    // takes return value and appends it to the tweets container
 
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
@@ -68,21 +65,23 @@ $(document).ready(function() {
 
     return $tweet;
   };
+  
+  $('#tweet-form').on('submit', function(event) {
+    event.preventDefault();
+    console.log('Button clicked, performing ajax call...');
+    console.log($(this).serialize());
+    const formData = $(this).serialize();
+    $.ajax('/tweets', {
+      method: 'POST',
+      data: formData
+    })
+      .then(function(response) {
+        console.log(response);
+      });
+    return false;
+  });
 
   renderTweets(data);
-
-  const tweetData = {
-    "user": {
-      "name": "Newton",
-      "avatars": "https://i.imgur.com/73hZDYK.png",
-      "handle": "@SirIsaac"
-    },
-    "content": {
-      "text": "If I have seen further it is by standing on the shoulders of giants"
-    },
-    "created_at": 1461116232227
-  };
-
 
   const $tweet = createTweetElement(tweetData);
 
