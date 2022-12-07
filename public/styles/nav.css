@@ -23,6 +23,7 @@ nav {
   flex-direction: column;
   align-items: center;
   padding-top: 15px;
+  font-family: "Source Sans Pro", sans-serif;
 }
 
 .fa-bounce{
@@ -31,4 +32,8 @@ nav {
 
 nav span{
   margin-bottom: 10px;
+}
+
+.newtweet:hover{
+  color:aqua;
 }
