@@ -1,6 +1,11 @@
-
 /* eslint-disable no-undef */
 $(document).ready(function() {
+
+  const escape = function (str) {
+    let div = document.createElement("div");
+    div.appendChild(document.createTextNode(str));
+    return div.innerHTML;
+  };
 
   const renderTweets = function(tweets) {
     $('#tweets-container').empty();
@@ -23,7 +28,7 @@ $(document).ready(function() {
           </div>
             <span>${tweet.user.handle}</span>
           </div>
-            <p class="tweet-text">${tweet.content.text}</p>
+            <p class="tweet-text">${escape(tweet.content.text)}</p>
           <footer>
             <div class="days">
               <p>${timeago.format(tweet.created_at)}</p>
