@@ -3,7 +3,7 @@
 $(document).ready(function() {
 
   const renderTweets = function(tweets) {
-
+    $('#tweets-container').empty();
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $('#tweets-container').append($tweet);
@@ -49,8 +49,6 @@ $(document).ready(function() {
         renderTweets(tweets);
       });
   };
-
-  loadTweets();
   
   $('#tweet-form').on('submit', function(event) {
     event.preventDefault();
@@ -72,6 +70,7 @@ $(document).ready(function() {
     })
       .then(function(response) {
         console.log(response);
+        loadTweets();
       });
     return false;
   });
