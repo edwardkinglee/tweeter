@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 console.log('composer file loaded');
 $(document).ready(function() {
   console.log('document ready started');
