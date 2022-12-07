@@ -26,7 +26,7 @@ $(document).ready(function() {
             <p class="tweet-text">${tweet.content.text}</p>
           <footer>
             <div class="days">
-              <p>${tweet.created_at}</p>
+              <p>${timeago.format(tweet.created_at)}</p>
             </div>
             <div>
               <form method="POST" action="">
@@ -51,15 +51,6 @@ $(document).ready(function() {
   };
 
   loadTweets();
-  // $(function() {
-  //   $('#btn').on('click', function() {
-  //     $.ajax('/tweets', { method: 'GET' })
-  //       .then(function(moreTweets) {
-  //         console.log('Success: ', moreTweets);
-  //         $('tweets-container').replaceWith(moreTweets);
-  //       });
-  //   });
-  // });
   
   $('#tweet-form').on('submit', function(event) {
     event.preventDefault();
