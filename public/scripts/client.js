@@ -33,9 +33,7 @@ $(document).ready(function() {
     // takes return value and appends it to the tweets container
 
     for (const tweet of tweets) {
-      console.log('in renderTweets function');
       const $tweet = createTweetElement(tweet);
-      console.log('tweet element', $tweet);
       $('#tweets-container').append($tweet);
     }
   };

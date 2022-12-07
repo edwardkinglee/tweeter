@@ -62,3 +62,11 @@ footer .fa-solid:hover{
   display: flex;
   justify-content: space-between;
 }
+
+.days p{
+  margin-top: 0;
+}
+
+.tweet-text{
+  margin-bottom: 10px;
+}
