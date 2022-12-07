@@ -1,7 +1,8 @@
 /* eslint-disable no-undef */
 $(document).ready(function() {
+  $(".error").hide();
 
-  const escape = function (str) {
+  const escape = function(str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
     return div.innerHTML;
@@ -61,19 +62,23 @@ $(document).ready(function() {
     console.log('tweet-form on submit',$(this).serialize());
     console.log('tweet length',tweetLength);
     const formData = $(this).serialize();
+    const yieldSymbol = '<i class="fa-solid fa-triangle-exclamation"></i>';
     
     if (tweetLength === 0 || tweetLength === null) {
-      return alert("Message length can't be zero");
+      $(".error").html(`${yieldSymbol} Too short. Message length can't be zero. ${yieldSymbol}`).addClass("error-style").slideDown();
+      return;
     }
 
     if (tweetLength > 140) {
-      return alert("Message length can't be greater than 140");
+      $(".error").html(`${yieldSymbol} Too long. Message length can't be greater than 140. ${yieldSymbol}`).addClass("error-style").slideDown();
+      return;
     }
     $.ajax('/tweets', {
       method: 'POST',
       data: formData
     })
       .then(function(response) {
+        $(".error").slideUp();
         console.log(response);
         loadTweets();
       });

@@ -71,3 +71,11 @@ footer .fa-solid:hover{
 .tweet-text{
   margin-bottom: 10px;
 }
+
+.error-style{
+  border: 2px solid crimson ;
+  color:crimson;
+  margin-bottom: 60px;
+  font-size: 1.1em;
+  padding: 0.5em;
+}
