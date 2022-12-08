@@ -18,6 +18,7 @@ footer{
 
 .tweet-btn:hover{
   cursor: pointer;
+  background-color: #f1cf48;
 }
 textarea{
   background: transparent;
