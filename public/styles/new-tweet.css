@@ -39,7 +39,9 @@ article img{
 }
 
 .tweet-text{
-  border-bottom: 2px solid #000000;
+  border-bottom: 3px solid #000000;
+  padding-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .profile-pic{
@@ -49,10 +51,6 @@ article img{
 
 .profile-name{
   margin-left: 10px;
-}
-
-.tweet-text{
-  padding-bottom: 40px;
 }
 
 footer .fa-solid:hover{
@@ -68,14 +66,20 @@ footer .fa-solid:hover{
   margin-top: 0;
 }
 
-.tweet-text{
-  margin-bottom: 10px;
-}
-
 .error-style{
   border: 2px solid crimson ;
   color:crimson;
   margin-bottom: 60px;
   font-size: 1.1em;
   padding: 0.5em;
+}
+
+.tweet{
+  border: 3px solid black;
+  padding: 20px 10px 10px 10px;
+  margin-bottom: 35px;
+}
+
+.tweet:hover{
+  box-shadow: 5px 10px #4056A1;
 }
