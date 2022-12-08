@@ -80,8 +80,18 @@ $(document).ready(function() {
       .then(function(response) {
         $(".error").slideUp();
         console.log(response);
+        $("#tweet-text").val("");
+        $(".counter").text(140);
         loadTweets();
       });
     return false;
+  });
+
+  $('.newtweet').on('click', function() {
+    const hiddenValue = $('#tweet-form').is(":hidden");
+    if (hiddenValue) {
+      return $("#tweet-form").slideDown();
+    }
+    $("#tweet-form").slideUp();
   });
 });

@@ -29,3 +29,10 @@ main {
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
+
+ .up-arrow{
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  display: none;
+ }

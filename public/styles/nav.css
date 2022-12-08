@@ -21,6 +21,9 @@ nav {
 .newtweet{
   display:flex;
   flex-direction: column;
+  background-color: #4056A1;
+  border: none;
+  color: white;
   align-items: center;
   padding-top: 15px;
   font-family: "Source Sans Pro", sans-serif;
