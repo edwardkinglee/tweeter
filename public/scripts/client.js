@@ -28,7 +28,7 @@ $(document).ready(function() {
             <label for="name"><strong>${tweet.user.name}</strong></label>
           </div> 
           </div>
-            <span>${tweet.user.handle}</span>
+            <span class="user-handle">${tweet.user.handle}</span>
           </div>
             <p class="tweet-text">${escape(tweet.content.text)}</p>
           <footer>

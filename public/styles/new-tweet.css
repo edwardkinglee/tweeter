@@ -83,3 +83,7 @@ footer .fa-solid:hover{
 .tweet:hover{
   box-shadow: 10px 10px #f1cf48;
 }
+
+.user-handle{
+  color:#39b0f0;
+}
