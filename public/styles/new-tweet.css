@@ -92,3 +92,7 @@ footer .fa-solid:hover{
 .user-handle{
   color:#39b0f0;
 }
+
+button:focus{
+  outline: none;
+}

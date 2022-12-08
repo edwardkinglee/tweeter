@@ -55,20 +55,31 @@ $(document).ready(function() {
       });
   };
   
+  /*Checks if tweet length is not empty or greater than max, returns error message if true, returns false if okay*/
+  const tweetLengthValidator = (tweetLength, maxLength) => {
+
+    const yieldSymbol = '<i class="fa-solid fa-triangle-exclamation"></i>';
+    
+    if (tweetLength === 0 || tweetLength === null) {
+      return `${yieldSymbol} Too short. Message length can't be zero. ${yieldSymbol}`;
+    }
+
+    if (tweetLength > maxLength) {
+      return `${yieldSymbol} Too long. Message length can't be greater than 140. ${yieldSymbol}`;
+    }
+
+    return false;
+  
+  };
+
   $('#tweet-form').on('submit', function(event) {
     event.preventDefault();
     const tweetLength = $(this).serialize().length - 5;
     const formData = $(this).serialize();
-    const yieldSymbol = '<i class="fa-solid fa-triangle-exclamation"></i>';
+    const errorMessage = tweetLengthValidator(tweetLength, 140);
     
-    if (tweetLength === 0 || tweetLength === null) {
-      $(".error").html(`${yieldSymbol} Too short. Message length can't be zero. ${yieldSymbol}`).addClass("error-style").slideDown();
-      return;
-    }
-
-    if (tweetLength > 140) {
-      $(".error").html(`${yieldSymbol} Too long. Message length can't be greater than 140. ${yieldSymbol}`).addClass("error-style").slideDown();
-      return;
+    if (errorMessage) {
+      return $(".error").html(errorMessage).addClass("error-style").slideDown();
     }
 
     $.ajax('/tweets', {
@@ -96,6 +107,7 @@ $(document).ready(function() {
     }
     $(".tweet-write").html('Write');
     $("#tweet-form").slideUp();
+    $(".error").slideUp();
   });
 
   loadTweets();
