@@ -40,4 +40,5 @@ main {
 
  .up-arrow:hover{
   cursor: pointer;
+  filter: invert(91%) sepia(48%) saturate(2281%) hue-rotate(260deg) brightness(104%) contrast(100%);
  }
