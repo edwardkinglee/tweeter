@@ -59,6 +59,7 @@ article img{
 
 footer .fa-solid:hover{
   color:#f1cf48;
+  cursor: pointer;
 }
 
 .tweet-header{
