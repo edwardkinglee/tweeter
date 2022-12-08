@@ -41,13 +41,6 @@ article img{
   margin-bottom: 50px;
 }
 
-.tweet-text{
-  border-bottom: 3px solid #000000;
-  padding-bottom: 40px;
-  margin-bottom: 10px;
-  overflow-wrap: break-word;
-}
-
 .profile-pic{
   display:flex;
   align-items: center;;
