@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 $(document).ready(function() {
   $(".error").hide();
-
+  
   const escape = function(str) {
     let div = document.createElement("div");
     div.appendChild(document.createTextNode(str));
@@ -98,4 +98,5 @@ $(document).ready(function() {
     $("#tweet-form").slideUp();
   });
 
+  loadTweets();
 });

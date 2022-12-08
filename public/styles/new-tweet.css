@@ -54,7 +54,7 @@ article img{
 }
 
 footer .fa-solid:hover{
-  color:#4056A1;
+  color:#f1cf48;
 }
 
 .tweet-header{
@@ -81,5 +81,5 @@ footer .fa-solid:hover{
 }
 
 .tweet:hover{
-  box-shadow: 5px 10px #4056A1;
+  box-shadow: 10px 10px #f1cf48;
 }
