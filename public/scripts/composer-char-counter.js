@@ -1,7 +1,5 @@
 /* eslint-disable no-undef */
-console.log('composer file loaded');
 $(document).ready(function() {
-  console.log('document ready started');
   
   $("textarea").on('input', function() {
     let textUsed = $(this).val().length;
@@ -19,15 +17,16 @@ $(document).ready(function() {
   });
     
   $(window).scroll(function() {
-    console.log('scrollTop',$(window).scrollTop());
     const scrollTop = $(window).scrollTop();
+    
     if (scrollTop > 400) {
       return $(".up-arrow").show();
     }
-     
+
     $(".up-arrow").hide();
   
   });
+
   $(".up-arrow").on("click", function() {
     const hiddenValue = $('#tweet-form').is(":hidden");
 
@@ -37,8 +36,7 @@ $(document).ready(function() {
 
     $(window).scrollTop(0);
     $('textarea').focus();
-     
-    
+
   });
   
 });

@@ -10,6 +10,7 @@ $(document).ready(function() {
 
   const renderTweets = function(tweets) {
     $('#tweets-container').empty();
+
     for (const tweet of tweets) {
       const $tweet = createTweetElement(tweet);
       $('#tweets-container').prepend($tweet);
@@ -48,10 +49,8 @@ $(document).ready(function() {
   };
   
   const loadTweets = () => {
-    
     $.ajax('/tweets', { method: 'GET' })
       .then(function(tweets) {
-        console.log('load Tweets', tweets);
         renderTweets(tweets);
       });
   };
@@ -59,8 +58,6 @@ $(document).ready(function() {
   $('#tweet-form').on('submit', function(event) {
     event.preventDefault();
     const tweetLength = $(this).serialize().length - 5;
-    console.log('tweet-form on submit',$(this).serialize());
-    console.log('tweet length',tweetLength);
     const formData = $(this).serialize();
     const yieldSymbol = '<i class="fa-solid fa-triangle-exclamation"></i>';
     
@@ -73,18 +70,20 @@ $(document).ready(function() {
       $(".error").html(`${yieldSymbol} Too long. Message length can't be greater than 140. ${yieldSymbol}`).addClass("error-style").slideDown();
       return;
     }
+
     $.ajax('/tweets', {
       method: 'POST',
       data: formData
     })
-      .then(function(response) {
+      .then(function() {
         $(".error").slideUp();
-        console.log(response);
         $("#tweet-text").val("");
         $(".counter").text(140);
         loadTweets();
       });
+
     return false;
+  
   });
 
   $('.new-tweet').on('click', function() {
