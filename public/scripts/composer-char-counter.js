@@ -32,11 +32,13 @@ $(document).ready(function() {
 
     if (hiddenValue) {
       $("#tweet-form").slideDown();
+      $(".tweet-write").html('Close');
+      $('#tweet-text').focus();
     }
 
     $(window).scrollTop(0);
-    $('textarea').focus();
+    $('#tweet-text').focus();
 
   });
-  
+
 });
