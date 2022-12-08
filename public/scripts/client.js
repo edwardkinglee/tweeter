@@ -91,6 +91,7 @@ $(document).ready(function() {
     if (hiddenValue) {
       $(".tweet-write").html('Close');
       $("#tweet-form").slideDown();
+      $("#tweet-text").focus();
       return;
     }
     $(".tweet-write").html('Write');
