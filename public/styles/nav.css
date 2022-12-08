@@ -39,4 +39,5 @@ nav span{
 
 .new-tweet:hover{
   color:aqua;
+  cursor: pointer;
 }

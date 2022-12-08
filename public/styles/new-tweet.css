@@ -16,6 +16,9 @@ footer{
   font-family: Bungee, sans-serif;
 }
 
+.tweet-btn:hover{
+  cursor: pointer;
+}
 textarea{
   background: transparent;
   border: none;
