@@ -33,7 +33,11 @@ main {
  .up-arrow{
   position: fixed;
   bottom: 2em;
-  right: 2em;
+  right: 1em;
   display: none;
   width: 3em;
+ }
+
+ .up-arrow:hover{
+  cursor: pointer;
  }
