@@ -18,7 +18,7 @@ nav {
   color:red;
 }
 
-.newtweet{
+.new-tweet{
   display:flex;
   flex-direction: column;
   background-color: #4056A1;
@@ -37,6 +37,6 @@ nav span{
   margin-bottom: 10px;
 }
 
-.newtweet:hover{
+.new-tweet:hover{
   color:aqua;
 }

@@ -87,11 +87,15 @@ $(document).ready(function() {
     return false;
   });
 
-  $('.newtweet').on('click', function() {
+  $('.new-tweet').on('click', function() {
     const hiddenValue = $('#tweet-form').is(":hidden");
     if (hiddenValue) {
-      return $("#tweet-form").slideDown();
+      $(".tweet-write").html('Close');
+      $("#tweet-form").slideDown();
+      return;
     }
+    $(".tweet-write").html('Write');
     $("#tweet-form").slideUp();
   });
+
 });
