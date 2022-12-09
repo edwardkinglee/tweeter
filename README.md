@@ -11,12 +11,12 @@ Completed stretch activities:
 6. Second button will also open up the create new tweet area if closed.
 7. Add media queries for min-width 1024px and for max-width 400px.
 
-## Final Product
+## Screenshots
 
-!["Main Page"](https://github.com/edwardkinglee/tweeter/blob/master/public/images/mainpage.png)
-!["Footer Icon"](https://github.com/edwardkinglee/tweeter/blob/master/public/images/footericons.png)
-!["Error Message"](https://github.com/edwardkinglee/tweeter/blob/master/public/images/errormsg.png)
-!["Laptop Screen Size"](https://github.com/edwardkinglee/tweeter/blob/master/public/images/laptopscreen.png)
+!["Screenshot Main Page"](https://github.com/edwardkinglee/tweeter/blob/master/public/images/mainpage.png)
+!["Screenshot Footer Icon"](https://github.com/edwardkinglee/tweeter/blob/master/public/images/footericons.png)
+!["Screenshot Error Message"](https://github.com/edwardkinglee/tweeter/blob/master/public/images/errormsg.png)
+!["Screenshot Laptop Screen Size"](https://github.com/edwardkinglee/tweeter/blob/master/public/images/laptopscreen.png)
 
 ## Getting Started
 
