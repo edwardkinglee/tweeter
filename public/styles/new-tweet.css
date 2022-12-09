@@ -98,3 +98,7 @@ footer .fa-solid:hover {
 button:focus {
   outline: none;
 }
+
+.color-red{
+  color: red;
+}

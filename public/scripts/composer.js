@@ -5,11 +5,13 @@ $(document).ready(function() {
     let textUsed = $(this).val().length;
     const textLimit = 140;
     let count = textLimit - textUsed;
-    //if count is less than 0 red text else black text
+    //if count is less than 0 color-red, greater or equal remove color-red
     if (count < 0) {
-      $('.counter').css('color', 'red');
-    } else {
-      $('.counter').css('color', '#545149');
+      $('.counter').addClass("color-red");
+    }
+    
+    if (count >= 0) {
+      $('.counter').removeClass("color-red");
     }
    
     $(".counter").text(count);
