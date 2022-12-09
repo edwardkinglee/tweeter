@@ -13,11 +13,11 @@ Completed stretch activities:
 
 ## Final Product
 
-!["Main Page"](./public/images/mainpage.png)
-!["Footer Icon"](./public/images/footericons.png)
-!["Error Message"](./public/images/errormsg.png)
-!["Laptop Screen Size"](./public/images/laptopscreen.png)
-!["Usage Video"](./public/video/Tweeter.mp4)
+!["Main Page"](https://github.com/edwardkinglee/tweeter/blob/master/public/images/mainpage.png)
+!["Footer Icon"](https://github.com/edwardkinglee/tweeter/blob/master/public/images/footericons.png)
+!["Error Message"](https://github.com/edwardkinglee/tweeter/blob/master/public/images/errormsg.png)
+!["Laptop Screen Size"](https://github.com/edwardkinglee/tweeter/blob/master/public/images/laptopscreen.png)
+!["Usage Video"](https://github.com/edwardkinglee/tweeter/blob/master/public/video/Tweeter.mp4)
 
 ## Getting Started
 
