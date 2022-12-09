@@ -19,10 +19,10 @@
   }
 }
 
-  /* Smartphones: maximum width of around 400px */
-  @media screen and (max-width: 400px) {
-    .new-tweet{
-    padding-top: 0;
-    font-size: 50%;
-    }
-  }
+/* Smartphones: maximum width of around 400px */
+@media screen and (max-width: 400px) {
+  .new-tweet{
+  padding-top: 0;
+   font-size: 50%;
+  }  
+}

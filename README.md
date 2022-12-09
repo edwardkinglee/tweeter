@@ -2,7 +2,22 @@
 
 Tweeter is a simple, single-page Twitter clone.
 
-This repository is the starter code for the project: Students will fork and clone this repository, then build upon it to practice their HTML, CSS, JS, jQuery and AJAX front-end skills, and their Node, Express back-end skills.
+Completed stretch activities:
+1. Add Close a new tweet and Open a new tweet button.
+2. Close/Open button triggers slideUp and slideDown functionality.  
+3. Update hover events to change color and show a pointer.
+4. Add second button to show when the user scrolls down past a certain point.
+5. Second button scrolls back to the top of the page and puts focus in the textarea.
+6. Second button will also open up the create new tweet area if closed.
+7. Add media queries for min-width 1024px and for max-width 400px.
+
+## Final Product
+
+!["Main Page"](./public/images/mainpage.png)
+!["Footer Icon"](./public/images/footericons.png)
+!["Error Message"](./public/images/errormsg.png)
+!["Laptop Screen Size"](./public/images/laptopscreen.png)
+!["Usage Video"](./public/video/Tweeter.mp4)
 
 ## Getting Started
 
