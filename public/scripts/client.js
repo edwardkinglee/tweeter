@@ -75,7 +75,7 @@ $(document).ready(function() {
 
   $('#tweet-form').on('submit', function(event) {
     event.preventDefault();
-    const tweetLength = $(this).serialize().length - 5;
+    const tweetLength = $("#tweet-text").val().length;
     const formData = $(this).serialize();
     const errorMessage = tweetLengthValidator(tweetLength, 140);
     
