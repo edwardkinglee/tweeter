@@ -18,32 +18,33 @@ $(document).ready(function() {
   };
 
   const createTweetElement = function(tweet) {
-    let $tweet = $(`<article class="tweet">
+    let $tweet = $(
+      `<article class="tweet">
         <div class="tweet-header">
           <div class="profile-pic">
-            <div>
-              <img src=${tweet.user.avatars}/>
-            </div>
-            <div class="profile-name">
-              <label for="name"><strong>${tweet.user.name}</strong></label>
-            </div> 
-            </div>
-              <span class="user-handle">${tweet.user.handle}</span>
-            </div>
-              <p class="tweet-text">${escape(tweet.content.text)}</p>
-            <footer>
-              <div class="days">
-                <p>${timeago.format(tweet.created_at)}</p>
-              </div>
               <div>
-                <form method="POST" action="">
-                  <i class="fa-solid fa-flag"></i>
-                  <i class="fa-sharp fa-solid fa-retweet"></i>
-                  <i class="fa-solid fa-heart"></i>
-                </form>
+                <img src=${tweet.user.avatars}/>
               </div>
-            </footer>
-        </article>`);
+              <div class="profile-name">
+                <label for="name"><strong>${tweet.user.name}</strong></label>
+              </div> 
+          </div>
+              <span class="user-handle">${tweet.user.handle}</span>
+        </div>
+            <p class="tweet-text">${escape(tweet.content.text)}</p>
+        <footer>
+            <div class="days">
+              <p>${timeago.format(tweet.created_at)}</p>
+            </div>
+            <div>
+              <form method="POST" action="">
+                <i class="fa-solid fa-flag"></i>
+                <i class="fa-sharp fa-solid fa-retweet"></i>
+                <i class="fa-solid fa-heart"></i>
+              </form>
+             </div>
+        </footer>
+      </article>`);
 
     return $tweet;
   };
