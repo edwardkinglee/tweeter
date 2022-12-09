@@ -17,7 +17,6 @@ Completed stretch activities:
 !["Footer Icon"](https://github.com/edwardkinglee/tweeter/blob/master/public/images/footericons.png)
 !["Error Message"](https://github.com/edwardkinglee/tweeter/blob/master/public/images/errormsg.png)
 !["Laptop Screen Size"](https://github.com/edwardkinglee/tweeter/blob/master/public/images/laptopscreen.png)
-!["Usage Video"](https://github.com/edwardkinglee/tweeter/blob/master/public/video/Tweeter.mp4)
 
 ## Getting Started
 
