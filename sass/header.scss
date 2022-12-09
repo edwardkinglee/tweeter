@@ -1,12 +1,16 @@
+//Added for stretch challenge
 $hover-color: #f1cf48;
-
-header {
+@mixin center{
   display: flex;
   flex-direction: column;
-  height: 400px;
-  width: 100%;
   justify-content: center;
   align-items: center;
+}
+
+header {
+  @include center;
+  height: 400px;
+  width: 100%;
   background-color: $hover-color;
   background-image: url("../images/asfalt-dark.png");
   margin-top: 80px;
