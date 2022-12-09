@@ -6,7 +6,6 @@
 html {
   box-sizing: border-box;
 }
-
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -14,6 +13,7 @@ html {
 /*
  * Global layout stuff
  */
+
 body {
   color: #545149;
   background-color: #f4f1ec;
@@ -26,19 +26,19 @@ main {
   margin: auto;
   background-color: #f4f1ec;
 }
-
 /*
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
-.up-arrow {
+ .up-arrow{
   position: fixed;
   bottom: 2em;
   right: 1em;
   display: none;
   width: 3em;
-}
+ }
 
-.up-arrow:hover {
+ .up-arrow:hover{
   cursor: pointer;
   filter: invert(91%) sepia(48%) saturate(2281%) hue-rotate(260deg) brightness(104%) contrast(100%);
-}
+ }
+

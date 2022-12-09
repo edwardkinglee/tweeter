@@ -1,3 +1,5 @@
+$hover-color: #f1cf48;
+
 header {
   display: flex;
   flex-direction: column;
@@ -5,13 +7,13 @@ header {
   width: 100%;
   justify-content: center;
   align-items: center;
-  background-color: #f1cf48;
+  background-color: $hover-color;
   background-image: url("../images/asfalt-dark.png");
   margin-top: 80px;
 }
 
-header div {
-  background-color: #f1cf48;
+header div{
+  background-color: $hover-color;
   color: white;
   background-image: url("../images/asfalt-dark.png");
 }

@@ -1,0 +1,47 @@
+$primary-color: #3743ab;
+$font-stack1: Bungee, sans-serif;
+$font-stack2: "Source Sans Pro", sans-serif;
+
+nav {
+  display:flex;
+  justify-content: space-between;
+  height: 120px;
+  width: 100vw;
+  background-color: $primary-color;
+  color: #FFFFFF;
+  padding: 1.5em;
+  position: fixed;
+  top: 0;
+}
+
+.navlogo{
+  font-family: $font-stack1;
+}
+
+.fa-angles-down{
+  color:red;
+}
+
+.new-tweet{
+  display:flex;
+  flex-direction: column;
+  background-color: $primary-color;
+  border: none;
+  color: white;
+  align-items: center;
+  padding-top: 15px;
+  font-family: $font-stack2;
+}
+
+.fa-bounce{
+  --fa-animation-duration: 3s;
+}
+
+nav span{
+  margin-bottom: 10px;
+}
+
+.new-tweet:hover{
+  color:aqua;
+  cursor: pointer;
+}

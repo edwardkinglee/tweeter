@@ -1,27 +1,30 @@
-.container {
+$primary-color: #3743ab;
+$hover-color: #f1cf48;
+$font-stack1: Bungee, sans-serif;
+
+.container{
   display: flex;
   flex-direction: column;
   margin-top: 60px;
 }
 
-footer {
+footer{
   display: flex;
   justify-content: space-between;
 }
 
 .tweet-btn {
-  background-color: #3743ab;
+  background-color: $primary-color;
   color: white;
   border: none;
-  font-family: Bungee, sans-serif;
+  font-family: $font-stack1;
 }
 
-.tweet-btn:hover {
+.tweet-btn:hover{
   cursor: pointer;
-  background-color: #f1cf48;
+  background-color: $hover-color;
 }
-
-textarea {
+textarea{
   background: transparent;
   border: none;
   border-bottom: 2px solid #000000;
@@ -31,70 +34,70 @@ textarea {
   overflow: auto;
 }
 
-textarea:focus {
+textarea:focus{
   outline: none;
 }
 
-article img {
+article img{
   width: 5em;
 }
 
-.new-tweet-section {
+.new-tweet-section{
   margin-bottom: 50px;
 }
 
-.tweet-text {
+.tweet-text{
   border-bottom: 3px solid #000000;
   padding-bottom: 40px;
   margin-bottom: 10px;
   overflow-wrap: break-word;
 }
 
-.profile-pic {
-  display: flex;
-  align-items: center;
+.profile-pic{
+  display:flex;
+  align-items: center;;
 }
 
-.profile-name {
+.profile-name{
   margin-left: 10px;
 }
 
-footer .fa-solid:hover {
-  color: #f1cf48;
+footer .fa-solid:hover{
+  color: $hover-color;
   cursor: pointer;
 }
 
-.tweet-header {
+.tweet-header{
   display: flex;
   justify-content: space-between;
 }
 
-.days p {
+.days p{
   margin-top: 0;
 }
 
-.error-style {
-  border: 2px solid crimson;
-  color: crimson;
+.error-style{
+  border: 2px solid crimson ;
+  color:crimson;
   margin-bottom: 60px;
   font-size: 1.1em;
   padding: 0.5em;
 }
 
-.tweet {
+.tweet{
   border: 3px solid black;
   padding: 20px 15px 15px 15px;
   margin-bottom: 35px;
 }
 
-.tweet:hover {
-  box-shadow: 10px 10px #f1cf48;
+.tweet:hover{
+  box-shadow: 10px 10px $hover-color;
 }
 
-.user-handle {
-  color: #39b0f0;
+.user-handle{
+  color:#39b0f0;
 }
 
-button:focus {
+button:focus{
   outline: none;
 }

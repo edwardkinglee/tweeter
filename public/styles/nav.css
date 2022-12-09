@@ -1,27 +1,27 @@
 nav {
-  display:flex;
+  display: flex;
   justify-content: space-between;
   height: 120px;
   width: 100vw;
-  background-color: #4056A1;
+  background-color: #3743ab;
   color: #FFFFFF;
   padding: 1.5em;
   position: fixed;
   top: 0;
 }
 
-.navlogo{
+.navlogo {
   font-family: Bungee, sans-serif;
 }
 
-.fa-angles-down{
-  color:red;
+.fa-angles-down {
+  color: red;
 }
 
-.new-tweet{
-  display:flex;
+.new-tweet {
+  display: flex;
   flex-direction: column;
-  background-color: #4056A1;
+  background-color: #3743ab;
   border: none;
   color: white;
   align-items: center;
@@ -29,15 +29,15 @@ nav {
   font-family: "Source Sans Pro", sans-serif;
 }
 
-.fa-bounce{
+.fa-bounce {
   --fa-animation-duration: 3s;
 }
 
-nav span{
+nav span {
   margin-bottom: 10px;
 }
 
-.new-tweet:hover{
-  color:aqua;
+.new-tweet:hover {
+  color: aqua;
   cursor: pointer;
 }
